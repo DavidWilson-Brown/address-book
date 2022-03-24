@@ -1,38 +1,73 @@
-.App {
+html {
+  height: 100vh;
+  font-family: 'Oswald', sans-serif;
+  background-color: #333333;
+}
+
+p {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #565656;
   text-align: center;
+  font-size: medium;
+  color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page-title {
+  font-size: 45px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  margin: 10px;
+  list-style-type: none;
+  width: 260px;
+  height: 285px;
+  border-radius: 5px;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  box-shadow: 8px 6px 5px #565656;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #333333;
+}
+
+button {
+  margin-bottom: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  height: 20px;
+  width: 120px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px #565656;
+  transition: box-shadow .2s, background-color .2s, color .2s;
+}
+
+button:hover {
+  box-shadow: none;
+  background-color: #565656;
+  font-family: 'Oswald', sans-serif;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+i {
+  color: #333333;
 }
